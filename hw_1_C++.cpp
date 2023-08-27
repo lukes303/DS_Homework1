@@ -217,6 +217,21 @@ int main()
 	// ......
 	// ......
 	// === End of Task 3 ====
+
+	
+	//Task 3 Implementation start
+
+	//Input: 40 2.5 55 3.34 80 2.98 90 3.44 12001 3.68
+
+	for(int i = 0; i < 5; i++){
+	
+		cin >> sid >> gpa;
+
+		x[i].set_SID(sid);
+		x[i].set_GPA(gpa); 
+	}
+
+	//Task 3 Implementation end
 	
 
 	// ======= Test 2 =======
@@ -229,21 +244,21 @@ int main()
 
 
 	// ======= Test 3 =======
-	// This tests your University class. 
-	// OU.set_Stu(x);
-	// OU.GPA_Mean(); cout << ' ';
-	// OU.GPA_Max();  cout << ' ';
-	// OU.GPA_Min();  cout << endl;
+	//This tests your University class. 
+	OU.set_Stu(x);
+	OU.GPA_Mean(); cout << ' ';
+	OU.GPA_Max();  cout << ' ';
+	OU.GPA_Min();  cout << endl;
 	// === End of Test 3 ====
 
 
 	// ======= Test 4 =======
 	// This tests your reset function.
-	// for (int i = 0; i < 5; i++) {
-	// 	x[i].reset();
-	// 	x[i].prt_SID();	cout << ' ';
-	// 	x[i].prt_GPA();	cout << endl;
-	// }
+	for (int i = 0; i < 5; i++) {
+		x[i].reset();
+		x[i].prt_SID();	cout << ' ';
+		x[i].prt_GPA();	cout << endl;
+	}
 	// === End of Test 4 ====
 	
 	return 0;
